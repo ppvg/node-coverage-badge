@@ -1,0 +1,15 @@
+#!/bin/env node
+var fs = require('fs');
+var badge = module.exports = require('../');
+
+var args = process.argv.splice(2);
+
+if (require.main === module) {
+  if (args.length === 0) {
+    console.log("Usage: coverage-badge coverage filename");
+  } else if (args.length === 2) {
+    var coverage = args[0];
+    var file = fs.createWriteStream(args[1]);
+    badge(coverage).pipe(file);
+  }
+}

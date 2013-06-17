@@ -1,0 +1,25 @@
+{
+  "name": "coverage-badge",
+  "version": "0.0.1",
+  "description": "Generate fancy code coverage badges.",
+  "main": "index.js",
+  "dependencies": {
+    "canvas": "~1.0.3",
+    "gm": "~1.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "code",
+    "coverage",
+    "badge",
+    "continuous",
+    "integration",
+    "ci"
+  ],
+  "author": "Peter-Paul van Gemerden <info@ppvg.nl>",
+  "license": "BSD"
+}
