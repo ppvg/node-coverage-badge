@@ -4,14 +4,15 @@
   "description": "Generate fancy code coverage badges.",
   "main": "index.js",
   "dependencies": {
-    "canvas": "~1.0.3",
-    "gm": "~1.9.2"
+    "canvas": "~1.0.3"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PPvG/node-coverage-badge.git"
+  },
   "keywords": [
     "code",
     "coverage",
