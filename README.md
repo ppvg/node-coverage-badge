@@ -1,6 +1,6 @@
 Generate fancy code coverage badges! Does what it says on the tin. Works like this:
 
-    $ node coverage-badge 99 coverage.png
+    $ node coverage-badge 97 coverage.png
 
 ... or like this:
 
@@ -13,3 +13,5 @@ Generate fancy code coverage badges! Does what it says on the tin. Works like th
     badge(coverage).pipe(file);
 
 In other words: use your build tool to tie it to your code coverage report.
+
+The result looks something like this: ![97% coverage](https://raw.github.com/PPvG/node-coverage-badge/master/example.png)
