@@ -16,12 +16,12 @@ Works like this:
 
     badge(coverage).pipe(file);
 
-You can tie it in with build tool and let your continuous integration tool call the build step in question.
+Tie it in with build tool and let your continuous integration tool call that build step and archive the image.
 
 Example
 -------
 
-[Node-aether](https://github.com/PPvG/node-aether) uses Drone.io as CI server and `slake` as build tool. The relevant build step runs `jscoverage` to instrument, then runs `mocha` to generate a JSON code coverage report, and then uses that to generate the coverage badge. That last bit looks like this (rewritten from the original LiveScript):
+An example: [node-aether](https://github.com/PPvG/node-aether) uses Drone.io as CI server and `slake` as build tool. The relevant build step runs `jscoverage` to instrument, then runs `mocha` to generate a JSON code coverage report, and then uses that to generate the coverage badge. That last bit looks like this (rewritten from the original LiveScript):
 
     var badge = require('coverage-badge');
 
@@ -40,4 +40,20 @@ At each build, Drone.io runs these commands:
     sudo apt-get install jscoverage
     slake cov-badge
 
-... and then saves `./coverage.png` as a **build artefact**. The image can then be found under the Downloads tab. The result: [![Code Coverage for node-aether](https://drone.io/github.com/PPvG/node-aether/files/coverage.png)](https://github.com/PPvG/node-aether)
+... and then saves `./coverage.png` as a **build artefact**. The image can then be found under the Downloads tab. The result:
+[![Code Coverage for node-aether](https://drone.io/github.com/PPvG/node-aether/files/coverage.png)](https://github.com/PPvG/node-aether)
+
+Visual theme
+------------
+
+Currently it pretty much mimics the look of the Drone.io badge. Other styles may be added in the future.
+
+Installation
+------------
+
+    npm install coverage-badge
+
+License
+-------
+
+Simplified BSD (2-clause).
