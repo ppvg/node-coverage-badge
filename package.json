@@ -3,22 +3,21 @@
   "version": "0.0.3",
   "description": "Generate fancy code coverage badges.",
   "main": "index.js",
+  "bin": {
+    "coverage-badge": "./bin/coverage-badge"
+  },
   "dependencies": {
     "canvas": "~1.0.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/PPvG/node-coverage-badge.git"
   },
   "keywords": [
-    "code",
+    "code coverage",
     "coverage",
     "badge",
-    "continuous",
-    "integration",
+    "continuous integration",
     "ci"
   ],
   "author": "Peter-Paul van Gemerden <info@ppvg.nl>",
